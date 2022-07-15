@@ -1,48 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Calculadora</title>
+    <link rel="stylesheet" href="play.css">
+    <title>CALCULADORA | PLAY</title>
 </head>
-
 <body>
-    <div class="center">
-        <div class="calculadora">
-            <div class="painel">
-                <div class="visorPainel"></div>
-            </div>
-            <div class="gridBotoes">
-                <div class="gridBotoesEsquerda">
-                    <div class="gridBotoesLadoEsquerdo">
-                        <div class="limpar"><button class="botoesEsquerda">C</button></div>
-                        <div class="divisao"><button class="botoesEsquerda">/</button></div>
-                        <div class="multiplicacao"><button class="botoesEsquerda">*</button></div>
-                        <div class="subtracao"><button class="botoesEsquerda">-</button></div>
-                        <div class="adicao"><button class="botoesEsquerda">+</button></div>
-                        <div class="resultado"><button class="botoesEsquerda">=</button></div>
-                    </div>
-                </div>
-                <div class="gridBotoesDireita">
-                    <div class="um" id="numeros"><button class="botoesNumericos" id="1">1</button></div>
-                    <div class="dois" id="numeros"><button class="botoesNumericos" id="2">2</button></div>
-                    <div class="tres" id="numeros"><button class="botoesNumericos" id="3">3</button></div>
-                    <div class="quatro" id="numeros"><button class="botoesNumericos" id="4">4</button></div>
-                    <div class="cinco" id="numeros"><button class="botoesNumericos" id="5">5</button></div>
-                    <div class="seis" id="numeros"><button class="botoesNumericos" id="6">6</button></div>
-                    <div class="sete" id="numeros"><button class="botoesNumericos" id="7">7</button></div>
-                    <div class="oito" id="numeros"><button class="botoesNumericos" id="8">8</button></div>
-                    <div class="nove" id="numeros"><button class="botoesNumericos" id="9">9</button></div>
-                    <div class="zero" id="numeros"><button class="botoesNumericos" id="0">0</button></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <script src="scripts.js"></script>
-</body>
+    <section class="boxCalc">
 
+        <h1>CALCULADORA</h1>
+        
+        <div class="numeros">
+        <label for="primeiroNumero">PRIMEIRO NUMERO:</label>
+        <input type="text" name="primeiroNumero" id="n1">
+        <label for="segundoNumero">SEGUNDO NUMERO:</label>
+        <input type="text" name="segundoNumero" id="n2">
+        </div>
+        
+        <div class="botoes">
+        <button class="bnt bnt__soma" onclick="fct_soma()">SOMAR</button>
+        <button class="bnt bnt__subtração" onclick="fct_subtracao()">SUBTRAIR</button>
+        <button class="bnt bnt__multilicacao" onclick="fct_multiplicacao()">MULTIPLICAR</button>
+        <button class="bnt bnt__divisao" onclick="fct_divisao()">DIVIDIR</button>
+        </div>
+
+        <p>O resultado da sua conta foi: <br> <span id="span"></span></p>
+    </section>
+    <script src="main.js"></script>
+</body>
 </html>
