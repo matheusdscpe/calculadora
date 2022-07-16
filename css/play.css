@@ -47,6 +47,10 @@ body{
     border: solid black 1px;
     width: 100%;
     margin: 0.2rem;
+    cursor: pointer;
+}
+.bnt:active{
+    background-color: rgb(157, 165, 113);
 }
 .paraResultado{
     text-align: center;
