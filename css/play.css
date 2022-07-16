@@ -1,0 +1,55 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgb(214, 213, 120), rgb(133, 133, 46));
+}
+
+.boxCalc{
+    border-radius: 0.2rem;
+    border: solid black 1px;
+    width: 70%;
+    height: 50%;
+}
+
+.titulo{
+    margin: 1rem;
+    text-align: center;
+}
+
+.numeros{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.campos{
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 3rem;
+    border: 1px solid #000000;
+    text-align: center;
+}
+.botoes{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+}
+.bnt{
+    border-radius: 0.5rem;
+    border: solid black 1px;
+    width: 100%;
+    margin: 0.2rem;
+    
+}
+.paraResultado{
+    text-align: center;
+}
+
+/*Adicionar layout mobile*/

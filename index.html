@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="play.css">
+    <link rel="stylesheet" href="./css/all.css">
     <title>CALCULADORA | PLAY</title>
 </head>
 <body>
     <section class="boxCalc">
 
-        <h1>CALCULADORA</h1>
+        <h1 class="titulo">CALCULADORA</h1>
         
         <div class="numeros">
-        <label for="primeiroNumero">PRIMEIRO NUMERO:</label>
-        <input type="text" name="primeiroNumero" id="n1">
-        <label for="segundoNumero">SEGUNDO NUMERO:</label>
-        <input type="text" name="segundoNumero" id="n2">
+        <label for="n1">PRIMEIRO NUMERO:</label>
+        <input type="number" class="campos" name="primeiroNumero" id="n1">
+        <label for="n2">SEGUNDO NUMERO:</label>
+        <input type="number" class="campos" name="segundoNumero" id="n2">
         </div>
         
         <div class="botoes">
@@ -26,8 +26,8 @@
         <button class="bnt bnt__divisao" onclick="fct_divisao()">DIVIDIR</button>
         </div>
 
-        <p>O resultado da sua conta foi: <br> <span id="span"></span></p>
+        <p class="paraResultado">O resultado da sua conta foi: <br> <span id="span">-</span></p>
     </section>
-    <script src="main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
