@@ -49,6 +49,9 @@ body{
     margin: 0.2rem;
     cursor: pointer;
 }
+.bnt:hover{
+    background-color: rgb(217, 228, 158);
+}
 .bnt:active{
     background-color: rgb(157, 165, 113);
 }
